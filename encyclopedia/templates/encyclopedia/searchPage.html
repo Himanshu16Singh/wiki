@@ -1,0 +1,14 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+    Search Page
+{% endblock %}
+
+{% block body %}
+    <h1>Related page to Search</h1>
+    <ul>
+        {% for entry in related_entry %}
+            <li><a href="{% url 'wiki:entry_page' entry %}">{{ entry }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

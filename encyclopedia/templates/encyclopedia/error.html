@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ status }}</title>
+    </head>
+    <body>
+        {% if status == 404%}
+            <h1>ERROR PAGE: {{ status }}</h1>
+            <p>Requested page was not found!</p>
+        {% else %}            
+            <h1>ERROR PAGE: {{ status }}</h1>
+            <p>Page with same title already exist!</p>
+        {% endif %}
+    </body>
+</html>
